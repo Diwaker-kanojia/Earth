@@ -7,18 +7,19 @@
     <title>Earth</title>
   </head>
   <body>
+    <!-- Header -->
     <section class="header">
       <div class="container">
         <nav>
           <div class="logo"><h1>Earth</h1></div>
           <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
           <div class="menu-btn">
-            <img src="./img/menu.svg" alt="">
+            <img src="./img/menu.svg" alt="" />
           </div>
         </nav>
         <div class="header-content">
@@ -28,5 +29,79 @@
         </div>
       </div>
     </section>
+    <!-- services -->
+    <section id="services" class="container">
+      <div class="service">
+        <img src="./img/service-1.png" alt="" />
+        <h1>Web Design</h1>
+        <p>
+          Custom web design for small business, we help you capture new
+          audiences and increase your sales.
+        </p>
+      </div>
+      <div class="service">
+        <img src="./img/service-2.png" alt="" />
+        <h1>Graphic Design</h1>
+        <p>
+          Custom Graphic design for small business, we help you capture new
+          audiences and increase your sales.
+        </p>
+      </div>
+      <div class="service">
+        <img src="./img/service-3.png" alt="" />
+        <h1>Content Creation</h1>
+        <p>
+          Custom web design for small business, we help you capture new
+          audiences and increase your sales.
+        </p>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="container">
+      <div class="about-content">
+        <h1>About Us</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+          necessitatibus veritatis optio ullam nesciunt saepe, eos laborum
+          molestias unde ex quam beatae eligendi pariatur iste recusandae neque
+          nemo? Inventore
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="./img/about.png" alt="" />
+      </div>
+    </section>
+    <!-- Talk to Us Section -->
+    <section id="talk-to-us">
+      <div class="talk-to-us-content">
+        <h1>Talk To Us</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus facere sit saepe accusantium corporis ad vel vitae
+          cupiditate fugiat? Nulla
+        </p>
+        <button class="primary-btn">GET IN TOUCH</button>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="container">
+      <ul class="foooter-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <h1 class="logo">Earth</h1>
+      <p>&copy;2025 Earth. All right reserved.</p>
+    </footer>
+    <!-- JS for button toggle -->
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
